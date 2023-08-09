@@ -1,0 +1,17 @@
+{
+  "name": "react_note_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:dev": "cd ./server && npm run dev",
+    "client:dev": "cd ./client && npm run start",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

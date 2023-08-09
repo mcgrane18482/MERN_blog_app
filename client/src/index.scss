@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root{
+  height:100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.row, .column{
+  display: flex;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff
+}
+
+header{
+  background: #372d85;
+  padding: 6px 5%;
+  color: white;
+  margin-bottom: 20px;
+  nav {
+  p.welcome-message {
+    margin-right: 15px;
+  }
+  p.header-username {
+    color:#ff51dc;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    &.active{
+      color: #ff51dc
+    }
+  }
+}
+}
+
+main{
+  padding: 0 3%;
+}
+
+.landing{
+  h1, h3{
+    margin-bottom: 20px;
+  }
+  img{
+    height: 60px;
+    width: 60px;
+  }
+}
+
+form{
+  width: 400px;
+  margin: 20px auto 0;
+  p.error-message{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: red;
+  }
+  input, button {
+    padding: 5px 10px;
+    margin-bottom: 7px;
+  }
+  button{
+    border: none;
+    padding: 8px 10px;
+    font-size: 1rem;
+    background-color: #a91de9;
+    color: #fff;
+  }
+}
+
+.notes-feed{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.note-body{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.note-header{
+  display: flex;
+ 
+  p {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
+
+.note-content{
+    padding: 10px;
+    border-bottom: 8px solid #bdbdbd;
+  
+}
+  
